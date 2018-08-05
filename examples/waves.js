@@ -1,6 +1,7 @@
+ 
 
 
-var Blank = function(options) {
+var Waves = function(options) {
 	
 	var defaults = {
 		position: pt(100, 100),
@@ -20,7 +21,7 @@ var Blank = function(options) {
 
 
 
-Blank.prototype.draw = function(ctx) {
+Waves.prototype.draw = function(ctx) {
 	
 	ctx.save();
 	
@@ -31,7 +32,7 @@ Blank.prototype.draw = function(ctx) {
 	ctx.restore();
 }
 
-Blank.prototype.frameMove = function(te, input) {
+Waves.prototype.frameMove = function(te, input) {
 	
 	// animation happens here
 }

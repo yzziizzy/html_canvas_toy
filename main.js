@@ -15,6 +15,16 @@ function init() {
 	
 	addDrawable(new Spinner({}));
 	addDrawable(new Revolver({}));
+	
+	// override default properties like this
+	addDrawable(new Revolver({
+		position: pt(460, 240),
+		speed: 1.0,
+		radius: 120,
+		size: 35,
+	}));
+	
+	
 	addDrawable(new Pulse({}));
 	
 	// draw order determines above and below
