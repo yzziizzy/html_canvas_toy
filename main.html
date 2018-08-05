@@ -1,0 +1,39 @@
+<html>
+<head>
+	<meta charset="utf-8"/>
+	
+	<link rel="stylesheet" type="text/css" href="main.css" />
+
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	
+	
+	<script src="utilities.js"></script>
+
+	<script src="examples/spinner.js"></script>
+	<script src="examples/revolver.js"></script>
+	<script src="examples/pulse.js"></script>
+	<script src="examples/snake.js"></script>
+	
+	<script src="init.js"></script>
+	<script src="main.js"></script>
+	
+
+	<script>
+		$(document).ready(function() {
+			initCanvas();
+		});
+	</script>
+	
+</head>
+<body>
+	<div class="container">
+
+		<div class="backing">
+			<canvas width="1000" height="500" class="scribble-canvas"></canvas>
+		</div>
+		
+		<div class="overlay info"></div>
+		
+	</div>
+</body>
+

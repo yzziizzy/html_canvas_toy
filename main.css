@@ -1,0 +1,175 @@
+body {
+	background-color: black;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	position: relative;
+	width: 1000px;
+	height: 500px;
+	left: 50%;
+	margin-left: -500px;
+}
+
+.scribble-canvas {
+	z-index: 500;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+
+.backing {
+	background-color:white;
+	width:1000px;
+	height: 500px;
+	position:absolute;
+	left:0px;
+	top:0px;
+}
+
+#controls {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 999;
+}
+
+#controls button {
+	float: left;
+	background-color: gray;
+}
+#controls button.active {
+	background-color: orange;
+}
+
+
+.overlay { 
+	position:absolute;
+	left: 0px;
+	top: 0px;
+	width: 1000px;
+	height: 500px;
+	z-index: 600;
+/* 			font-size: 50px; */
+/* 			color: red; */
+/* 			text-align: center; */
+/* 			margin-top: 200px; */
+}
+
+	/* loading screen */
+	
+.loadscreen {
+	width: 1000px;
+	display: block;
+	margin: 0 auto;
+	}
+
+.shading1 {
+	width: 450px;
+	height: 500px;
+	background: linear-gradient(to right, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	
+.shading2 {
+	width: 350px;
+	height: 500px;
+	background: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0));
+	position: absolute;
+	right: 0;
+	top: 0;
+	}	
+
+.instructions {
+	width: 300px;
+	position: absolute;
+	top: 200px;
+	left: 50%;
+	text-align: center;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: rgb(92, 30, 10);
+	margin-left: -155px;
+	}
+
+.instructions > h2 {
+	font-size: 19pt;
+	}
+	
+.loading, .play {
+	font-family: sans-serif;
+	position: absolute;
+	top: 430px;
+	width: 100%;
+	font-size: 20px;
+	text-align: center;
+	}
+	
+.loadbar {
+	width: 250px;
+	height: 15px;
+	border: 2px solid white;
+	background-color: white;
+	position: absolute;
+	top: 460px;
+	left: 50%;
+	margin-left: -125px;
+	border-radius: 4px;
+	}
+	
+.loading-progress {
+	width: 1%;
+	height: 100%;
+	background-color: blue;
+	}		
+	
+.winImage {
+	position: absolute;
+	top: -115px;
+	}
+
+.winnerbox {
+	width: 400px;
+	height: 200px;
+	background-color: lightblue;
+	position: absolute;
+	top: 150px;
+	left: 300px;
+	border-radius: 0 0 10px 10px;
+	font-family: sans-serif;
+	padding-top: 30px;
+	}
+	
+h1 {
+	text-align: center;
+	font-size: 30pt;
+	color: brown;
+	margin: 40px;
+}
+	
+.winnerbox .instructions {
+	top: 100px;
+}
+
+.winnerbox .instructions2 {
+	top: 100px;
+	width: 400px;
+	text-align: center;
+	font-size: 20px;
+	font-family: sans-serif;
+	color: rgb(92, 30, 10);
+	position: absolute;
+}
+.winnerbox .play {
+	top: 150px;
+	
+}
+
+.shadow {
+	background-color: #000000;
+	opacity: .5;
+}
+	
