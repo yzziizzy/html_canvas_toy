@@ -14,16 +14,12 @@ body {
 
 .scribble-canvas {
 	z-index: 500;
-	position: absolute;
 	left: 0px;
 	top: 0px;
 }
 
 .backing {
 	background-color:white;
-	width:1000px;
-	height: 500px;
-	position:absolute;
 	left:0px;
 	top:0px;
 }

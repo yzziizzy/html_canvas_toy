@@ -1,6 +1,8 @@
 
 
 
+var _shouldRun = true;
+var _speed = 1;
 
 function initCanvas() {
 	
@@ -60,12 +62,13 @@ function initCanvas() {
 		var cw = ctx.canvas.width;
 		var ch = ctx.canvas.height;
 		
-		ctx.clearRect(0, 0, cw, ch); // clear the entire canvas
+		if(_shouldRun) {
+			ctx.clearRect(0, 0, cw, ch); // clear the entire canvas
 		 
-		var input = checkinputs();
+			var input = checkinputs();
 		
-		
-		drawLoop(ctx, te, input);
+			drawLoop(ctx, te * _speed, input);
+		}
 		
 		window.requestAnimFrame(frame);
 	}
@@ -80,5 +83,10 @@ function initCanvas() {
 
 
 
-
  
+function toggleRun() {
+	_shouldRun = !_shouldRun;
+	return _shouldRun;
+}
+ 
+

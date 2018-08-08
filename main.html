@@ -20,9 +20,37 @@
 	
 
 	<script>
+		
 		$(document).ready(function() {
 			initCanvas();
+		
+			$('.start-stop-button').click(function(e) {
+				e.preventDefault();
+				
+				// toggleRun returns true for running, false for stopped
+				var text = toggleRun() ? "Pause" : "Run";
+				$('.start-stop-button').text(text);
+				
+			});
+			
+			$('.speed-button').click(function(e) {
+				e.preventDefault();
+				
+				if(_speed == 1) {
+					_speed = .5;
+				}
+				else {
+					_speed = 1;
+				}
+				
+				var text = _speed == 1 ? "Normal Speed" : "Slow";
+				$('.speed-button').text(text);
+				
+			});
+			
 		});
+		
+		
 	</script>
 	
 </head>
@@ -32,6 +60,9 @@
 		<div class="backing">
 			<canvas width="1000" height="500" class="scribble-canvas"></canvas>
 		</div>
+		<button class="start-stop-button">Pause</button>
+		
+		<button class="speed-button">Normal Speed</button>
 		
 		<div class="overlay info"></div>
 		
