@@ -27,6 +27,10 @@ function initCanvas() {
 	
 	$(document).keyup(function(e) {
 		
+		// e.which = key
+		// e.pageX
+		// e.pageY
+		// e.metaKey
 		
 	});
 	

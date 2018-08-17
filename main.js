@@ -12,7 +12,7 @@ function addDrawable(d) {
 
 
 function init() {
-	
+	/*
 	addDrawable(new Spinner({}));
 	addDrawable(new Revolver({}));
 	
@@ -30,6 +30,9 @@ function init() {
 	// draw order determines above and below
 	// the snake will appear on top of the heart because it is drawn afterward
 	addDrawable(new Snake({}));
+	*/
+	
+	addDrawable(new Waves({}));
 	
 	
 	
@@ -70,4 +73,3 @@ function drawLoop(ctx, timeElapsed, input) {
 
 
 
- 
